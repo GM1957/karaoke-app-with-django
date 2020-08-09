@@ -20,5 +20,7 @@ from . import views
 
 urlpatterns = [
     path('',views.home,name='home'),
+    path('audiomarge/',views.audiomarge,name='audiomarge'),
+    path('videomarge/',views.videomarge,name='videomarge'),
     path('<str:slug>/',views.karaoke,name='karaoke'),
 ]

@@ -10,3 +10,8 @@ class Song(models.Model):
 
     def __str__(self):
         return self.songName
+
+class tempSong(models.Model):
+    TSsno = models.AutoField(primary_key=True)
+    tempSongFile = models.FileField(upload_to="home/music/tempFile")
+    
